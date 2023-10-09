@@ -57,6 +57,8 @@ void delay_n(int n) {
     for (i = 0; i < n; i++);
 }
 
+
+// delay 10ms chia nho chuong kiem tra nut nhan
 void delay_10ms(int n){
 	uint32_t i;
 	for(i = 0; i < n; i++){
