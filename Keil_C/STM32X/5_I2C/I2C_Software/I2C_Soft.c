@@ -150,7 +150,7 @@ void I2C_SendBytes(uint8_t *data, uint32_t len){
 				// xu ly loi
 				break;
 			}
-		}
+	  	}
 
 }
 
