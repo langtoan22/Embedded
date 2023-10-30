@@ -47,9 +47,10 @@ void SPI_Config(void){
 	// Precaler 16
 	// 64/16 = 4MHz     1s truyen duoc 4trieu bit
 	
+	// Apply config after enable
 	SPI_Init(SPI1, &SPI_InitStructure);
 	
-	// Kich hoat SPI
+	// Peripher enable
 	SPI_Cmd(SPI1, ENABLE);
 }
 
