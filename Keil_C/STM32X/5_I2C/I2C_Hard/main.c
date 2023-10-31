@@ -32,12 +32,11 @@ void I2C_HW_Init(void){
 	I2C_InitStructure.I2C_OwnAddress1 = 0x00;						// Dia chi: MASTER = 0x00, SLAVE = address define 
 	I2C_InitStructure.I2C_AcknowledgedAddress = I2C_AcknowledgedAddress_7bit;
 	
-	// Peripher enable
-	I2C_Cmd(I2C1, ENABLE);
-	
-	// Apply config after enable
+	// Apply config
 	I2C_Init(I2C1, &I2C_InitStructure);
 	
+		// Peripher enable
+	I2C_Cmd(I2C1, ENABLE);
 }
 
 
