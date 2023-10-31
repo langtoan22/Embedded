@@ -3,7 +3,7 @@
 #include "stm32f10x_gpio.h"
 #include "stm32f10x_spi.h"
 
-
+#define SS_PIN                  GPIO_Pin_4
 #define SCK_PIN									GPIO_Pin_5
 #define MISO_PIN								GPIO_Pin_6
 #define MOSI_PIN								GPIO_Pin_7
@@ -38,9 +38,9 @@ void SPI_Config(void){
 	SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;									 // DATA FRAME 8 or 16 bit
 	SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;											 	 // Xung HIGH or LOW
 	SPI_InitStructure.SPI_CPHA = SPI_CPHA_1Edge ;											 // Xung 1Edge or 2Edge push data
-	SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;													 // NSS_Soft with slaves, NSS_hard with slave
-	SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_16;// 
-	SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_LSB;								 // MSB or LSB
+	SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;													 // NSS_Soft with master, NSS_hard with slave
+	SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_16;// he so chia: APB2 = 72MHz mã, APB1 = 36MHz max
+	SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_MSB;								 // MSB or LSB
 	SPI_InitStructure.SPI_CRCPolynomial = 7 ;													 // CRC-7-16-32
 	
 	// system clock 64 MHz
@@ -52,6 +52,16 @@ void SPI_Config(void){
 	
 	// Peripher enable
 	SPI_Cmd(SPI1, ENABLE);
+}
+
+void SPI_SelectSlave() {
+  // Dat chan SS (Slave Select) xuong muc thap
+  GPIO_ResetBits(PORT_SPI, SS_PIN);
+}
+
+void SPI_DeselectSlave() {
+  // Dat chan SS (Slave Select) len muc cao
+  GPIO_SetBits(PORT_SPI, SS_PIN);
 }
 
 void SPI_SendData(SPI_TypeDef* SPIx, uint16_t Data){
