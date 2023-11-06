@@ -385,9 +385,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>chase_led_on_off.c</FileName>
+              <FileName>blinkled_use_REGISTER.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\chase_led_on_off.c</FilePath>
+              <FilePath>.\USER\blinkled_use_REGISTER.c</FilePath>
             </File>
           </Files>
         </Group>

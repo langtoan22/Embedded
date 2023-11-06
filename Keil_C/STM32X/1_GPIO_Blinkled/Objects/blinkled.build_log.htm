@@ -21,13 +21,13 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
 Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
-F:\LangToan\1-TOAN_LT\Couse\Embedded\Keil_C\STM32X\1_Blinkled\blinkled.uvprojx
-Project File Date:  10/08/2023
+E:\1_TOANLT\Embedded\Embedded\Keil_C\STM32X\1_GPIO_Blinkled\blinkled.uvprojx
+Project File Date:  11/01/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'Target 1'
-USER/chase_one_led.c(1): warning: In file included from...
+blinkled_useLIB.c(1): warning: In file included from...
 C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
   *              - To use or not the peripheral<92>s drivers in application code(i.e. 
                                                ^
@@ -37,7 +37,7 @@ C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\
 C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
   *           - Macros to access peripheral<92>s registers hardware
                                            ^
-USER/chase_one_led.c(1): warning: In file included from...
+blinkled_useLIB.c(1): warning: In file included from...
 C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
 ./RTE/Device/STM32F103C8\stm32f10x_conf.h(63): warning: In file included from...
 C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_gpio.h(31): warning: In file included from...
@@ -50,7 +50,7 @@ C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\
 C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
   *           - Macros to access peripheral<92>s registers hardware
                                            ^
-USER/chase_one_led.c(1): warning: In file included from...
+blinkled_useLIB.c(1): warning: In file included from...
 C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
 ./RTE/Device/STM32F103C8\stm32f10x_conf.h(75): warning: In file included from...
 C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\stm32f10x_rcc.h(31): warning: In file included from...
@@ -63,7 +63,7 @@ C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\
 C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
   *           - Macros to access peripheral<92>s registers hardware
                                            ^
-USER/chase_one_led.c(1): warning: In file included from...
+blinkled_useLIB.c(1): warning: In file included from...
 C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(8347): warning: In file included from...
 ./RTE/Device/STM32F103C8\stm32f10x_conf.h(96): warning: In file included from...
 C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc\misc.h(31): warning: In file included from...
@@ -76,29 +76,17 @@ C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\
 C:/Users/Lenovo/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
   *           - Macros to access peripheral<92>s registers hardware
                                            ^
-USER/chase_one_led.c(5): warning: no previous extern declaration for non-static variable 'sangdan' [-Wmissing-variable-declarations]
-uint16_t sangdan[8] = {0x1, 0x2, 0x4, 0x8, 0x10, 0x20, 0x40, 0x80};
-         ^
-USER/chase_one_led.c(5): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-uint16_t sangdan[8] = {0x1, 0x2, 0x4, 0x8, 0x10, 0x20, 0x40, 0x80};
-^
-USER/chase_one_led.c(6): warning: no previous extern declaration for non-static variable 'tatdan' [-Wmissing-variable-declarations]
-uint16_t tatdan[8] = {0x1, 0x2, 0x4, 0x8, 0x10, 0x20, 0x40, 0x80};
-         ^
-USER/chase_one_led.c(6): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-uint16_t tatdan[8] = {0x1, 0x2, 0x4, 0x8, 0x10, 0x20, 0x40, 0x80};
-^
-USER/chase_one_led.c(15): warning: // comments are not allowed in this language [-Wcomment]
-                // GPIOA 7 6 5 4 3 2 1 0
-                ^
-USER/chase_one_led.c(37): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+blinkled_useLIB.c(35): warning: // comments are not allowed in this language [-Wcomment]
+    // GPIO_Pin_13 14 15
+    ^
+blinkled_useLIB.c(33): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
     GPIO_InitTypeDef GPIO_InitStructure;
                      ^
-16 warnings generated.
-compiling chase_one_led.c...
+14 warnings generated.
+compiling blinkled_useLIB.c...
 linking...
-Program Size: Code=1440 RO-data=268 RW-data=32 ZI-data=1632  
-".\Objects\blinkled.axf" - 0 Error(s), 16 Warning(s).
+Program Size: Code=1400 RO-data=252 RW-data=0 ZI-data=1632  
+".\Objects\blinkled.axf" - 0 Error(s), 14 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -135,17 +123,17 @@ Package Vendor: Keil
       Include file:  RTE_Driver/GPIO_STM32F10x.h
 
    * Component: Keil::Device:Startup:1.0.0
-      Source file:   Device/Source/system_stm32f10x.c
-      Include file:  RTE_Driver/Config/RTE_Device.h
       Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+      Source file:   Device/Source/system_stm32f10x.c
       Source file:   Device/Source/ARM/startup_stm32f10x_md.s
+      Include file:  RTE_Driver/Config/RTE_Device.h
 
    * Component: Keil::Device:StdPeriph Drivers:Framework:3.6.0
-      Include file:  Device/StdPeriph_Driver/templates/stm32f10x_it.h
+      Include file:  Device/StdPeriph_Driver/inc/misc.h
+      Source file:   Device/StdPeriph_Driver/src/misc.c
       Source file:   Device/StdPeriph_Driver/templates/stm32f10x_it.c
       Source file:   Device/StdPeriph_Driver/templates/stm32f10x_conf.h
-      Source file:   Device/StdPeriph_Driver/src/misc.c
-      Include file:  Device/StdPeriph_Driver/inc/misc.h
+      Include file:  Device/StdPeriph_Driver/templates/stm32f10x_it.h
 
    * Component: Keil::Device:StdPeriph Drivers:GPIO:3.6.0
       Include file:  Device/StdPeriph_Driver/inc/stm32f10x_gpio.h
@@ -154,7 +142,7 @@ Package Vendor: Keil
    * Component: Keil::Device:StdPeriph Drivers:RCC:3.6.0
       Source file:   Device/StdPeriph_Driver/src/stm32f10x_rcc.c
       Include file:  Device/StdPeriph_Driver/inc/stm32f10x_rcc.h
-Build Time Elapsed:  00:00:03
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>
