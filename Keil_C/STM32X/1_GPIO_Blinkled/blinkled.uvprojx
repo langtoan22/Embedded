@@ -385,9 +385,9 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>blinkled_use_REGISTER.c</FileName>
+              <FileName>blinkled_useLIB.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\USER\blinkled_use_REGISTER.c</FilePath>
+              <FilePath>.\blinkled_useLIB.c</FilePath>
             </File>
           </Files>
         </Group>
