@@ -387,7 +387,7 @@
             <File>
               <FileName>TIM_LED.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\TIM_LED.c</FilePath>
+              <FilePath>.\user\TIM_LED.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -482,5 +482,14 @@
       </file>
     </files>
   </RTE>
+
+  <LayerInfo>
+    <Layers>
+      <Layer>
+        <LayName>TIM</LayName>
+        <LayPrjMark>1</LayPrjMark>
+      </Layer>
+    </Layers>
+  </LayerInfo>
 
 </Project>
